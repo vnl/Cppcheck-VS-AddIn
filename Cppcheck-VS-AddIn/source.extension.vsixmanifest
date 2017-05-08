@@ -4,7 +4,9 @@
     <Identity Id="884bcde1-206c-4261-b159-b8df2942e457" Version="1.0" Language="en-US" Publisher="Vivian Lobo" />
     <DisplayName>Cppcheck VS AddIn</DisplayName>
     <Description xml:space="preserve">Visual Studio integration for Cppcheck, an open-source static code analyzer for C++</Description>
+    <MoreInfo>https://github.com/vnl/Cppcheck-VS-AddIn</MoreInfo>
     <License>Resources\LICENSE</License>
+    <ReleaseNotes>https://github.com/vnl/Cppcheck-VS-AddIn/blob/master/CHANGELOG.md</ReleaseNotes>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Preview.png</PreviewImage>
     <Tags>cpp, cppcheck, code-analyzer, static-code-analyzer</Tags>
