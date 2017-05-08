@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidCppcheckCommandPackage">
+    <Groups>
+      <Group guid="guidCppcheckCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidCppcheckCommandPackageCmdSet" id="CppcheckCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidCppcheckCommandPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke CppcheckCommand</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\CppcheckCommand.png" usedList="bmpPic1"/>
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidCppcheckCommandPackage" value="{b9af5f5d-7b46-44d8-b37e-5e4e1d7fe93f}" />
+
+    <GuidSymbol name="guidCppcheckCommandPackageCmdSet" value="{050e322e-8b72-4f90-90ab-7135ff965417}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="CppcheckCommandId" value="0x0100" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{8582c01b-ca87-4dad-b250-10515de95201}" >
+      <IDSymbol name="bmpPic1" value="1" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
